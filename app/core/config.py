@@ -4,12 +4,12 @@ from functools import lru_cache
 
 class Settings(BaseSettings):
    API_V1_STR: str = "/api/v1"
-   PROJECT_NAME: str = "Sitios en minca"
+   PROJECT_NAME: str = "Backend Store"
  
    POSTGRES_SERVER: str = "localhost"
    POSTGRES_USER: str = "fastapi"
    POSTGRES_PASSWORD: str = "123123"
-   POSTGRES_DB: str = "minca"
+   POSTGRES_DB: str = "store"
    SQLALCHEMY_DATABASE_URI: Optional[str] = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_SERVER}/{POSTGRES_DB}"
 
    # 60 minutes * 24 hours * 8 days = 8 days
